@@ -18,3 +18,5 @@ while True:
     captured_video.write(img_final)
     if cv2.waitKey(10) == ord('q'):
         break
+
+# youtubelink(https://www.youtube.com/watch?v=1J8dQA6gN7k)
