@@ -7,8 +7,8 @@ width = GetSystemMetrics(0)
 height = GetSystemMetrics(1)
 time_stamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
 file_name = f'{time_stamp}.mp4'
-fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
-captured_video = cv2.VideoWriter(file_name, fourcc, 20.0, (width, height))
+saveCV = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
+captured_video = cv2.VideoWriter(file_name, saveCV, 20.0, (width, height))
 
 while True:
     img = ImageGrab.grab(bbox=(0, 0, width, height,))
